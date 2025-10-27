@@ -220,7 +220,7 @@ const registrationModal = document.getElementById('registrationModal');
 const successModal = document.getElementById('successModal');
 const bookDemoBtn = document.getElementById('bookDemoBtn');
 const learnMoreBtn = document.getElementById('learnMoreBtn');
-const closeModalBtn = document.querySelector('.close-modal');
+const closeModalBtn = document.getElementById('closeRegistrationModal');
 const demoForm = document.getElementById('demoForm');
 
 // Learn More button - scroll to specifications

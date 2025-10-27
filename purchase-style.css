@@ -102,23 +102,23 @@ body {
 /* Options Grid */
 .options-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
 }
 
 .option-card {
     background: var(--card-background);
-    border-radius: 18px;
-    padding: 2rem;
+    border-radius: 14px;
+    padding: 1.25rem;
     transition: all 0.3s ease;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
     cursor: pointer;
     position: relative;
 }
 
 .option-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .option-card.selected {
@@ -130,40 +130,41 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .option-header h3 {
-    font-size: 1.75rem;
+    font-size: 1.35rem;
     font-weight: 600;
 }
 
 .option-badge {
     background: var(--primary-color);
     color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 12px;
-    font-size: 0.875rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 10px;
+    font-size: 0.75rem;
     font-weight: 500;
 }
 
 .option-price {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
     color: var(--primary-color);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .option-features {
     list-style: none;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .option-features li {
-    padding: 0.5rem 0;
+    padding: 0.35rem 0;
     color: var(--text-light);
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 1.25rem;
+    font-size: 0.9rem;
 }
 
 .option-features li::before {
@@ -172,16 +173,17 @@ body {
     left: 0;
     color: var(--primary-color);
     font-weight: 600;
+    font-size: 0.85rem;
 }
 
 .option-select-btn {
     width: 100%;
-    padding: 0.875rem;
+    padding: 0.7rem;
     background: var(--primary-color);
     color: white;
     border: none;
-    border-radius: 12px;
-    font-size: 1rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -204,57 +206,82 @@ body {
 .summary-section {
     display: flex;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 .summary-card {
     background: var(--card-background);
-    border-radius: 18px;
-    padding: 2.5rem;
-    min-width: 400px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 14px;
+    padding: 1.75rem;
+    min-width: 360px;
+    max-width: 420px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
 .summary-card h3 {
-    font-size: 1.75rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
 }
 
 .summary-item {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0;
-    font-size: 1.125rem;
+    align-items: center;
+    padding: 0.65rem 0;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #e8e8ed;
 }
 
-.summary-item span {
+.summary-item:last-of-type {
+    border-bottom: none;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.item-label {
     color: var(--text-light);
+    font-size: 0.8rem;
+}
+
+.item-info strong {
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+.item-price {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 .summary-divider {
     height: 1px;
     background: #d2d2d7;
-    margin: 1rem 0;
+    margin: 0.75rem 0;
 }
 
 .summary-total {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0;
-    font-size: 1.5rem;
+    padding: 0.75rem 0;
+    font-size: 1.35rem;
 }
 
 .btn-continue {
     width: 100%;
-    padding: 1rem;
+    padding: 0.85rem;
     background: var(--primary-color);
     color: white;
     border: none;
-    border-radius: 12px;
-    font-size: 1.125rem;
+    border-radius: 10px;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     transition: all 0.3s ease;
 }
 
